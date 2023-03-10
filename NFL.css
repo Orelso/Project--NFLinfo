@@ -1,0 +1,219 @@
+html,
+body{
+  min-width: 290px;
+  color: #4d4e53;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  background-color: rgb(4, 52, 102);
+}
+
+#bro{
+  font-family: "Open Sans";
+}
+
+h5{
+  font-size: 18px;
+}
+
+h6{
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+}
+
+header {
+  color: #CF1E0C;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+  font-family: "Herculanum"
+}
+
+img {
+  width: 10%;
+  position: relative;
+  margin-left: 90%;
+}
+
+#field {
+  background-color: green;
+  width: 100%;
+  height: 50%;
+  border-top: 6px solid black;
+  border-right: 6px solid black;
+  border-bottom: 6px solid black;
+  border-left: 6px solid black;
+  font-size: 30px;
+}
+
+.balls {
+  border-radius: 5%;
+  background: black;
+  position: fixed;
+  width: 1px;
+  height: 9px;
+  margin-left: 100px;
+  margin-top: 200px;
+  animation-name: bounce;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#ball1 {
+  left:27%;
+animation-timing-function: linear;
+}
+#ball2 {
+  left:28%;
+animation-timing-function: ease-out;
+}
+#ball3 {
+  left:30%;
+animation-timing-function: ease;
+}
+#ball4 {
+  left:34%;
+animation-timing-function: ease-out;
+}
+#ball5 {
+  left:40%;
+animation-timing-function: ease;
+}
+#ball6 {
+  left:47%;
+animation-timing-function: ease-in;
+}
+#ball7 {
+  left:52%;
+animation-timing-function: ease-out;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 249px;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  #field {
+  top: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-size: 17px;
+  }
+}
+
+a:hover {
+  background-color: white;
+  font-size: 150%;
+}
+
+@media only screen and (max-width: 815px){
+  img {
+  top: 0;
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  max-height: 275px;
+  border: none;
+  z-index: 1;
+  }
+}
+
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 26px;
+  font-family: "Herculanum";
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+    background-color: rgb(4, 52, 102);
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
